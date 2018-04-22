@@ -1,4 +1,9 @@
 # ACM_ICPC_DOT_NET_PS
-for my ps practice
 
-http://acmicpc.net
+just for fun
+
+<http://acmicpc.net>
+
+username
+
+<https://www.acmicpc.net/user/ernybugi>
