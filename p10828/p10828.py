@@ -12,15 +12,22 @@ while num_line:
         stack.append(cmd[1])
     else:
         if op == "top":
-            sys.stdout.write(stack[-1]+'\n')
+            if len(stack) > 0:
+                sys.stdout.write(stack[-1]+'\n')
+            else:
+                sys.stdout.write(str(-1)+ '\n')
         elif op == "size":
-            sys.stdout.write(str(len(stack)))
+            sys.stdout.write(str(len(stack))+'\n')
         elif op == "empty":
             if len(stack) > 0 :
-                sys.stdout.write(str(1))
+                sys.stdout.write(str(0)+'\n')
             else:
-                sys.stdout.write(str(0))
+                sys.stdout.write(str(1)+'\n')
         elif op == "pop":
-            sys.stdout.write(stack.pop())
+            if len(stack) > 0:
+                sys.stdout.write(str(stack[-1])+'\n')
+                stack.pop()
+            else:
+                sys.stdout.write(str(-1) + '\n')
 
     num_line = num_line - 1
